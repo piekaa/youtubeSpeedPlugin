@@ -1,0 +1,27 @@
+{
+  "name": "YoutuBezum",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch*",
+        "https://youtube.com/watch*",
+        "https://youtu.be/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_tite": "YoutuBezum"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
